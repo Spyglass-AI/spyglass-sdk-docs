@@ -1,0 +1,19 @@
+{
+  "name": "spyglass-docs",
+  "version": "1.0.0",
+  "description": "Spyglass AI SDK Documentation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "fern dev",
+    "build": "fern build",
+    "deploy": "fern deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["spyglass", "ai", "observability", "documentation"],
+  "author": "Spyglass AI",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@fern-api/fern-cli": "latest"
+  }
+}

@@ -1,0 +1,68 @@
+api:
+  name: spyglass-sdk
+  base-path: /api/v1
+  auth:
+    schemes:
+      - type: bearer
+        name: Authorization
+        header: Authorization
+        prefix: Bearer
+
+docs:
+  title: Spyglass AI SDK Documentation
+  description: >
+    Comprehensive documentation for the Spyglass AI SDK - the observability platform 
+    for AI applications. Monitor, trace, and optimize your LLM deployments.
+  
+  # Import OpenAPI spec from the backend
+  api:
+    path: ../spyglass-backend/docs/swagger.json
+  
+  # Navigation structure
+  navigation:
+    - title: Getting Started
+      items:
+        - title: Quick Start
+          path: /docs/getting-started/quickstart
+        - title: Installation
+          path: /docs/getting-started/installation
+        - title: Configuration
+          path: /docs/getting-started/configuration
+    
+    - title: SDK Reference
+      items:
+        - title: Python SDK
+          path: /docs/sdk/python
+        - title: API Reference
+          path: /docs/api-reference
+        - title: Examples
+          path: /docs/examples
+    
+    - title: Guides
+      items:
+        - title: Tracing OpenAI Calls
+          path: /docs/guides/openai-tracing
+        - title: Deployment Tracking
+          path: /docs/guides/deployment-tracking
+        - title: Best Practices
+          path: /docs/guides/best-practices
+    
+    - title: Examples
+      items:
+        - title: Example Project
+          path: /docs/examples/example-project
+        - title: Integration Examples
+          path: /docs/examples/integrations
+
+  # Enable Ask Fern chatbot
+  askFern:
+    enabled: true
+    title: Ask Fern
+    description: Get help with Spyglass SDK integration
+
+  # Custom styling
+  styling:
+    primaryColor: "#3B82F6"
+    logo:
+      dark: /logo-dark.png
+      light: /logo-light.png 

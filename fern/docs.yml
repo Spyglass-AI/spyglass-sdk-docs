@@ -1,0 +1,13 @@
+instances:
+  - url: https://spyglass-ai.docs.buildwithfern.com
+title: Spyglass AI SDK Documentation
+
+# Navigation structure
+navigation:
+  - page: Quick Start
+    path: docs/pages/quickstart.mdx
+
+# Custom styling with better contrast
+colors:
+  accentPrimary: '#1E40AF'
+  background: '#ffffff'

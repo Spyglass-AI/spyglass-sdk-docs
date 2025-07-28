@@ -1,0 +1,86 @@
+# Quick Start Guide
+
+Get up and running with Spyglass in under 5 minutes.
+
+## Prerequisites
+
+- Python 3.8+
+- OpenAI API key
+- Spyglass API key (get one from [spyglass-ai.com](https://spyglass-ai.com))
+
+## Installation
+
+Install the Spyglass SDK:
+
+```bash
+pip install spyglass-ai
+```
+
+## Basic Setup
+
+1. **Set your API keys**:
+
+```bash
+export SPYGLASS_API_KEY="your-spyglass-api-key"
+export OPENAI_API_KEY="your-openai-api-key"
+export SPYGLASS_DEPLOYMENT_ID="my-app"
+```
+
+2. **Wrap your OpenAI client**:
+
+```python
+import openai
+from spyglass_ai import spyglass_openai
+
+# Wrap your OpenAI client with Spyglass
+client = spyglass_openai(openai.OpenAI())
+```
+
+3. **Add tracing to your functions**:
+
+```python
+from spyglass_ai import spyglass_trace
+
+@spyglass_trace()
+def analyze_text(text):
+    response = client.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": f"Analyze this text: {text}"}
+        ]
+    )
+    return response.choices[0].message.content
+
+# Use your traced function
+result = analyze_text("Hello, world!")
+```
+
+## What Gets Traced
+
+Spyglass automatically captures:
+
+- **API Calls**: All OpenAI API requests and responses
+- **Token Usage**: Input and output token counts
+- **Response Times**: Latency for each API call
+- **Errors**: Failed requests and error details
+- **Function Calls**: Custom functions with the `@spyglass_trace()` decorator
+
+## View Your Data
+
+1. Go to your [Spyglass Dashboard](https://app.spyglass-ai.com)
+2. Navigate to the **Traces** tab
+3. See your API calls in real-time
+
+## Next Steps
+
+- [Installation Guide](./installation.md) - Detailed setup instructions
+- [Configuration Guide](./configuration.md) - Advanced configuration options
+- [Example Project](../../examples/example-project.md) - Complete working example
+- [API Reference](../../api-reference/) - Full API documentation
+
+## Need Help?
+
+- Join our [Discord community](https://discord.gg/spyglass-ai)
+- Check out the [example project](../example-project/)
+- Browse the [API reference](../../api-reference/) 
