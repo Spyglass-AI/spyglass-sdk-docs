@@ -1,0 +1,111 @@
+/* Slightly darker, modern light theme for Fern docs */
+body, .fern-docs-root {
+  background: #ece9e3 !important; /* slightly darker warm gray */
+  color: #23272a !important;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.fern-docs-root a {
+  color: #2563eb;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.fern-docs-root a:hover {
+  color: #b45309;
+}
+
+.fern-docs-root h1, .fern-docs-root h2, .fern-docs-root h3, .fern-docs-root h4, .fern-docs-root h5, .fern-docs-root h6 {
+  color: #1e293b;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.fern-docs-root nav, .fern-docs-root .sidebar, .fern-docs-root .toc {
+  background: #e3dfd7 !important; /* match new background, but distinct */
+}
+
+.fern-docs-root .sidebar, .fern-docs-root .toc {
+  color: #4b5563 !important;
+}
+.fern-docs-root .sidebar a, .fern-docs-root .toc a {
+  color: #4b5563 !important;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.fern-docs-root .sidebar a:hover, .fern-docs-root .toc a:hover {
+  color: #b45309 !important;
+}
+.fern-docs-root .sidebar .active, .fern-docs-root .toc .active {
+  color: #2563eb !important;
+  font-weight: 700;
+}
+
+.fern-docs-root pre, .fern-docs-root code {
+  background: #e3dfd7 !important;
+  color: #b45309 !important;
+  border-radius: 6px;
+  font-size: 0.97em;
+}
+
+.fern-docs-root table {
+  background: #e3dfd7;
+  color: #23272a;
+}
+
+.fern-docs-root th, .fern-docs-root td {
+  border-color: #d1d5db;
+}
+
+.fern-docs-root blockquote {
+  background: #e3dfd7;
+  border-left: 4px solid #2563eb;
+  color: #7c2d12;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+.fern-docs-root ::selection {
+  background: #fde68a;
+  color: #23272a;
+}
+
+/* Menu/search bar improvements */
+.fern-docs-root input[type="search"], .fern-docs-root .search-bar {
+  background: #e3dfd7 !important;
+  color: #23272a !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px;
+}
+.fern-docs-root input[type="search"]::placeholder {
+  color: #a3a3a3 !important;
+}
+
+/* Section headings and cards */
+.fern-docs-root .card, .fern-docs-root .section, .fern-docs-root .content-box {
+  background: #f7f6f3 !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(30,41,59,0.06);
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Button styles */
+.fern-docs-root button, .fern-docs-root .button {
+  background: #2563eb !important;
+  color: #fffdfa !important;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.fern-docs-root button:hover, .fern-docs-root .button:hover {
+  background: #b45309 !important;
+}
+
+/* Feedback and footer */
+.fern-docs-root .feedback, .fern-docs-root footer {
+  background: #ece9e3 !important;
+  color: #a3a3a3 !important;
+} 

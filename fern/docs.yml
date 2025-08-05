@@ -11,3 +11,4 @@ navigation:
 colors:
   accentPrimary: '#1E40AF'
   background: '#ffffff'
+css: ./styles.css
