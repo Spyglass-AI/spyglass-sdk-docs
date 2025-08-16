@@ -54,33 +54,13 @@ def analyze_text(text):
 
 # Use your traced function
 result = analyze_text("Hello, world!")
-```
-
-## What Gets Traced
-
-Spyglass automatically captures:
-
-- **API Calls**: All OpenAI API requests and responses
-- **Token Usage**: Input and output token counts
-- **Response Times**: Latency for each API call
-- **Errors**: Failed requests and error details
-- **Function Calls**: Custom functions with the `@spyglass_trace()` decorator
 
 ## View Your Data
 
-1. Go to your [Spyglass Dashboard](https://app.spyglass-ai.com)
-2. Navigate to the **Traces** tab
+1. Go to your [Spyglass Dashboard](https://spyglass-ai.com/dashboard)
+2. Navigate to the **Dashboards** tab
 3. See your API calls in real-time
 
-## Next Steps
-
-- [Installation Guide](./installation.md) - Detailed setup instructions
-- [Configuration Guide](./configuration.md) - Advanced configuration options
-- [Example Project](../../examples/example-project.md) - Complete working example
-- [API Reference](../../api-reference/) - Full API documentation
-
 ## Need Help?
+- Reach out to us at team@spyglass-ai.com
 
-- Join our [Discord community](https://discord.gg/spyglass-ai)
-- Check out the [example project](../example-project/)
-- Browse the [API reference](../../api-reference/) 
