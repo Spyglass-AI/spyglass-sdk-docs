@@ -63,6 +63,6 @@ To contribute to the documentation:
 
 ## Support
 
-- **Documentation**: Browse the docs at [docs.spyglass-ai.com](https://docs.spyglass-ai.com)
+- **Documentation**: Browse the docs at [https://spyglass-ai.docs.buildwithfern.com/quick-start](https://spyglass-ai.docs.buildwithfern.com/quick-start)
 - **GitHub Issues**: Report bugs or request features
 - **Discord**: Join our community for help and discussions 
