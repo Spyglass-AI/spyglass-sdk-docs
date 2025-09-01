@@ -108,4 +108,87 @@ body, .fern-docs-root {
 .fern-docs-root .feedback, .fern-docs-root footer {
   background: #ece9e3 !important;
   color: #a3a3a3 !important;
+}
+
+/* Feature cards styling */
+.fern-docs-root h3[id*="real-time"], 
+.fern-docs-root h3[id*="lightning"], 
+.fern-docs-root h3[id*="cost"], 
+.fern-docs-root h3[id*="debug"], 
+.fern-docs-root h3[id*="performance"], 
+.fern-docs-root h3[id*="deployment"] {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: white !important;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+/* Quickstart section styling */
+.fern-docs-root h3[id*="quickstarts"] + p + h3 {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white !important;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  margin: 1rem 0 0.5rem 0;
+  display: inline-block;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 8px rgba(16, 185, 129, 0.2);
+}
+
+/* Enhanced hero section */
+.fern-docs-root h1:first-of-type {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.fern-docs-root h2:first-of-type {
+  color: #64748b !important;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+/* Code block enhancements */
+.fern-docs-root pre {
+  background: #1e293b !important;
+  color: #e2e8f0 !important;
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  box-shadow: 0 4px 12px rgba(30, 41, 59, 0.4);
+  border: 1px solid #334155;
+}
+
+.fern-docs-root code {
+  background: #334155 !important;
+  color: #e2e8f0 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .fern-docs-root h1:first-of-type {
+    font-size: 2rem;
+  }
+  
+  .fern-docs-root h3[id*="real-time"], 
+  .fern-docs-root h3[id*="lightning"], 
+  .fern-docs-root h3[id*="cost"], 
+  .fern-docs-root h3[id*="debug"], 
+  .fern-docs-root h3[id*="performance"], 
+  .fern-docs-root h3[id*="deployment"] {
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+  }
 } 

@@ -7,8 +7,18 @@ navigation:
   - page: Quick Start
     path: docs/pages/quickstart.mdx
 
-# Custom styling with better contrast
+# Modern styling for developer tools
 colors:
-  accentPrimary: '#1E40AF'
+  accentPrimary: '#3B82F6'
+  accentSecondary: '#1E40AF'
   background: '#ffffff'
+  sidebar: '#f8fafc'
 css: ./styles.css
+
+# Logo configuration
+logo:
+  height: 40
+  href: https://spyglass-ai.com
+
+# Favicon
+favicon: ./assets/spyglass-32.png
