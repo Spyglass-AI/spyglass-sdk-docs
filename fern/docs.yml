@@ -10,9 +10,7 @@ navigation:
 # Modern styling for developer tools
 colors:
   accentPrimary: '#3B82F6'
-  accentSecondary: '#1E40AF'
   background: '#ffffff'
-  sidebar: '#f8fafc'
 css: ./styles.css
 
 # Logo configuration
