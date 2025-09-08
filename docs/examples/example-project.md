@@ -4,7 +4,7 @@ A complete working example of Spyglass integration.
 
 ## Overview
 
-The [Spyglass Example Project](../../../example-project/) demonstrates a complete integration of the Spyglass SDK with a real application. This example shows:
+The [Spyglass Example Project](https://github.com/Spyglass-AI/example-project) demonstrates a complete integration of the Spyglass SDK with a real application. This example shows:
 
 - Basic SDK setup and configuration
 - OpenAI API tracing
@@ -123,4 +123,4 @@ The GitHub Actions workflow automatically tracks deployments:
 
 ## Source Code
 
-View the complete example project at: [example-project/](../../../example-project/) 
+View the complete example project at: [https://github.com/Spyglass-AI/example-project](https://github.com/Spyglass-AI/example-project) 

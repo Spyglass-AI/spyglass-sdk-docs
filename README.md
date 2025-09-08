@@ -51,7 +51,7 @@ Spyglass is an observability platform designed specifically for AI applications.
 
 ## Example Project
 
-Check out our [example project](../example-project/) for a complete working example of Spyglass integration.
+Check out our [example project](https://github.com/Spyglass-AI/example-project) for a complete working example of Spyglass integration.
 
 ## Contributing
 
